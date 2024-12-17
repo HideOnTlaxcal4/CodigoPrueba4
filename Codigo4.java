@@ -8,6 +8,6 @@ class Solution {
             }
         }
 
-        return 0; // Retorno temporal
+        return i; // Devuelve el número de elementos únicos
     }
 }

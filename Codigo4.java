@@ -3,7 +3,9 @@ class Solution {
         int i = 0; // Posición para los elementos únicos
 
         for (int num : nums) {
-            // La lógica de validación se añadirá después
+            if (i == 0 || num > nums[i - 1]) { // Compara con el anterior
+                nums[i++] = num; // Asigna el valor único y mueve el índice
+            }
         }
 
         return 0; // Retorno temporal
